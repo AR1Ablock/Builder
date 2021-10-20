@@ -15,7 +15,7 @@ jobs:
 
     env:
       VENDOR: infinix
-      DEVICE: tiger
+      DEVICE: X690
       ANDROID_ROOT: /home/runner/work/twrp/
 
     steps:
@@ -44,7 +44,7 @@ jobs:
         cd $ANDROID_ROOT
         repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10.0 --depth=1
         repo sync -j8 -c 
-        #git clone https://github.com/AR1Ablock/DEvice-Tree-For-Infinix-Note-7-X690b-h691de-q.git device/infinix/tiger
+        git clone https://github.com/HemanthJabalpuri/twrp_infinix_X690.git device/infinix/X690
  
     - name: Build recovery
       run: |
