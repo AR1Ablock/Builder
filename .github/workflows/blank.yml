@@ -15,7 +15,7 @@ jobs:
 
     env:
       VENDOR: infinix
-      DEVICE: X690
+      DEVICE: Nova
       ANDROID_ROOT: /home/runner/work/twrp/
 
     steps:
@@ -44,7 +44,7 @@ jobs:
         cd $ANDROID_ROOT
         repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10.0 --depth=1
         repo sync -j8 -c 
-        git clone https://github.com/HemanthJabalpuri/twrp_infinix_X690.git device/infinix/X690
+        git clone https://github.com/AR1Ablock/TWRP-Device-Tree-Infinix-Smart-3-Plus-Nova-Super-Recovery.git device/infinix/Nova
  
     - name: Build recovery
       run: |
