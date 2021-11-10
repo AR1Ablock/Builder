@@ -44,7 +44,7 @@ jobs:
         cd $ANDROID_ROOT
         repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
         repo sync -j8 -c 
-        git clone https://github.com/AR1Ablock/Clean-DT-of-X267.git device/infinix/Nova
+        git clone https://github.com/AR1Ablock/testing-of-recoveries-DT.git device/infinix/Nova
  
     - name: Build recovery
       run: |
