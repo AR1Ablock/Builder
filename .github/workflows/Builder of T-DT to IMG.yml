@@ -42,7 +42,7 @@ jobs:
         source of.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp -b twrp-11.0 --depth=1
+        repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp twrp-11.0 --depth=1
         repo sync -j8 -c 
         git clone https://github.com/AR1Ablock/Final-TWRP-Device-Tree-For-X627.git device/infinix/Nova
  
