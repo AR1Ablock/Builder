@@ -43,8 +43,8 @@ jobs:
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
         repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
-        repo sync -j8 -c 
-        git clone https://github.com/AR1Ablock/Final-TWRP-Device-tree-For-Smart-3-Plus.git device/infinix/Nova
+        repo sync
+        git clone https://github.com/AR1Ablock/Testing.git device/infinix/Nova
  
     - name: Build recovery
       run: |
