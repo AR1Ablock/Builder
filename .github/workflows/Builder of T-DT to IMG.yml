@@ -42,9 +42,9 @@ jobs:
         source of.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        repo init -u git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_9.0
+        repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-8.1
         repo sync -j8 -c 
-        git clone https://github.com/AR1Ablock/X627-Device-Tree-For-Sky-Hawk-Recovery.git device/infinix/Nova
+        git clone https://github.com/AR1Ablock/Final-TWRP-Device-tree-For-Smart-3-Plus.git device/infinix/Nova
  
     - name: Build recovery
       run: |
