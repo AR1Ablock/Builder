@@ -6,7 +6,7 @@ cd $ANDROID_ROOT
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL="C"
-lunch omni_NoobUsers-eng
+lunch omni_X690B-eng
 #mkdir -p /home/runner/work/twrp/out/target/product/yggdrasil/system/etc
 #touch /home/runner/work/twrp/out/target/product/yggdrasil/system/etc/ld.config.txt
 make -j$(nproc) recoveryimage
