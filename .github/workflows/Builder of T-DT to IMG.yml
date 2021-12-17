@@ -15,7 +15,7 @@ jobs:
 
     env:
       VENDOR: infinix
-      DEVICE: X690B
+      DEVICE: NoobUsers
       ANDROID_ROOT: /home/runner/work/twrp/
 
     steps:
@@ -44,7 +44,7 @@ jobs:
         cd $ANDROID_ROOT
         repo init --depth=1 -u git://github.com/SHRP/manifest.git -b v3_10.0
         repo sync
-        git clone https://github.com/AR1Ablock/Sky-Hawk-Tree-For-Infinix-Note-7.git device/infinix/X690B
+        git clone https://github.com/AR1Ablock/Note-7-Sky-Hawk-Recovery-Tree.git device/infinix/NoobUsers
  
     - name: Build recovery
       run: |
