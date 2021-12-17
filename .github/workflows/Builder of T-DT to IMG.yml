@@ -42,7 +42,7 @@ jobs:
         source of.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        repo init -u git://github.com/SHRP/manifest.git -b v3_10.0
+        repo init --depth=1 -u git://github.com/SHRP/manifest.git -b v3_10.0
         repo sync
         git clone https://github.com/AR1Ablock/Infinix-Note-7-Sky-Hawk-Recovery-Tree.git device/infinix/NoobUsers
  
