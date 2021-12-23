@@ -45,7 +45,8 @@ jobs:
         repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
         repo sync
         git clone https://github.com/AR1Ablock/Final-TWRP-Device-tree-For-Smart-3-Plus.git device/infinix/Nova
- 
+        git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
+        
     - name: Build recovery
       run: |
         chmod +x build.sh
