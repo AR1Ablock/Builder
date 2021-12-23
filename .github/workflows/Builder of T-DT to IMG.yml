@@ -15,7 +15,7 @@ jobs:
 
     env:
       VENDOR: infinix
-      DEVICE: NoobUsers
+      DEVICE: Nova
       ANDROID_ROOT: /home/runner/work/twrp/
 
     steps:
@@ -42,9 +42,9 @@ jobs:
         source of.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        repo init --depth=1 -u git://github.com/SHRP/manifest.git -b v3_10.0
+        repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
         repo sync
-        git clone https://github.com/AR1Ablock/Note-7-Sky-Hawk-Recovery-Tree.git device/infinix/NoobUsers
+        git clone https://github.com/AR1Ablock/Final-TWRP-Device-tree-For-Smart-3-Plus.git device/infinix/Nova
  
     - name: Build recovery
       run: |
