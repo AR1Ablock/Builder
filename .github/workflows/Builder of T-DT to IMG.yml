@@ -42,11 +42,11 @@ jobs:
         source of.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        repo init --depth=1 -u git://github.com/SHRP/manifest.git -b v3_9.0
+        repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+        git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
         repo sync --force-sync
-        git clone https://github.com/AR1Ablock/X627-Device-Tree-For-Sky-Hawk-Recovery.git device/infinix/Nova
-        export FOX_USE_NANO_EDITOR=1
-        
+        git clone https://github.com/AR1Ablock/X627-Lite-Recovery-Tree.git device/infinix/Nova
+         
     - name: Build recovery
       run: |
         chmod +x build.sh
