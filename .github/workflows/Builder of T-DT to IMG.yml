@@ -42,7 +42,6 @@ jobs:
         source of.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        \\#git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
         repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
         repo sync --force-sync
         git clone https://github.com/AR1Ablock/X627-Lite-Recovery-Tree.git device/infinix/Nova
