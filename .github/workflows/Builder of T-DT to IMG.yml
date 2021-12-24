@@ -45,7 +45,7 @@ jobs:
         repo init --depth=1 -u git://github.com/SHRP/manifest.git -b v3_9.0
         repo sync --force-sync
         git clone https://github.com/AR1Ablock/X627-Device-Tree-For-Sky-Hawk-Recovery.git device/infinix/Nova
-        
+        export FOX_USE_NANO_EDITOR=1
         
     - name: Build recovery
       run: |
