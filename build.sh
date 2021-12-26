@@ -7,7 +7,6 @@ source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL="C"
 ## For OFX_R
-export FOX_USE_INITD_ADDON := 1
 export FOX_USE_NANO_EDITOR=1
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES := 1
