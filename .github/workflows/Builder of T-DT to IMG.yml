@@ -46,11 +46,12 @@ jobs:
         repo sync --force-sync
         git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
         git clone https://github.com/AR1Ablock/Orange-Fox-Recovery-Tree-For-Infinix-X627.git device/infinix/Nova
-        - name: Build recovery
-        run: |
+               
+    - name: Build recovery
+      run: |
         chmod +x build.sh
         bash -x build.sh
-        shell: bash
+      shell: bash
 
         - name : Upload recovery image
         uses: actions/upload-artifact@master
