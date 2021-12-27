@@ -45,7 +45,7 @@ jobs:
         repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
         git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
         repo sync --force-sync
-        got clone https://github.com/AR1Ablock/Orange-Fox-Recovery-Tree-For-Infinix-X627.git /device/infinix/Nova
+        git clone https://github.com/AR1Ablock/Orange-Fox-Recovery-Tree-For-Infinix-X627.git /device/infinix/Nova
         - name: Build recovery
         run: |
         chmod +x build.sh
