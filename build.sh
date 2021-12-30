@@ -2,6 +2,7 @@
 source of.env
 rm /bin/python
 ln -s /bin/python2 /bin/python
+ln -s /sbin /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-sp-28
 cd $ANDROID_ROOT
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
