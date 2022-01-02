@@ -2,10 +2,10 @@
 source of.env
 rm /bin/python
 ln -s /bin/python2 /bin/python
-ln -s /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/sbin/*.so /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-28/
-ln -s /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/sbin/*.so /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-sp-28/
-ln -s /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-28 /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/sbin/vndk-28
-ln -s /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-sp-28 /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/sbin/vndk-sp-28
+ln -s /sbin /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-28
+ln -s /sbin /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/system_root/system/lib/vndk-sp-28
+ln -s /system_root/system/lib/vndk/vndk-28 /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/sbin/vndk-28
+ln -s /system_root/system/lib/vndk/vndk-sp-28 /home/runner/work/CustomRecovery/device/infinix/Nova/recovery/root/sbin/vndk-sp-28
 cd $ANDROID_ROOT
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
